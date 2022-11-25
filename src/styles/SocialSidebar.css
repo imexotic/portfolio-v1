@@ -20,21 +20,21 @@
 
 .social-sidebar .sidebar-icon {
    font-size: 25px;
-   stroke-width: 1.5px;
-   color: #000;
+   stroke-width: 1.9px;
+   color: var(--primary-color);
    transition: all 0.2s linear;
 }
 
 .social-sidebar .sidebar-icon:hover {
-   color: #805ad5;
+   color: var(--secondary-color);
    transform: translateY(-3px);
 }
 
 .social-sidebar .line {
    margin-top: 2rem;
    height: 100px;
-   border: 2px solid #2d3748;
+   border: 2px solid var(--primary-color);
    border-radius: 20px;
    width: 1px;
-   background-color: #2d3748;
+   background-color: var(--primary-color);
 }

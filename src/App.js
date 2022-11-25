@@ -7,12 +7,12 @@ import "./styles/App.css";
 
 const App = () => {
    return (
-      <>
+      <div className="app">
          <Header />
          <Hero />
          <SocialSidebar />
          <Footer />
-      </>
+      </div>
    );
 };
 

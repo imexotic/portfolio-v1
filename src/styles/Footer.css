@@ -1,5 +1,5 @@
 footer {
-   background-color: #fff;
+   background-color: var(--background);
 }
 
 .footer-line {
@@ -18,13 +18,15 @@ footer p {
    margin: 0.5rem 0;
 }
 
+.footer-text {
+   color: var(--primary-color);
+   font-weight: 400;
+}
+
 footer a {
    text-decoration: underline;
    text-underline-offset: 3px;
-   color: #805ad5;
-}
-
-.footer-text {
+   color: var(--secondary-color);
 }
 
 .footer-icon {

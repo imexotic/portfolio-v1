@@ -8,7 +8,7 @@ const Footer = () => {
       <footer>
          <div className="container">
             <hr className="footer-line" />
-            <p>
+            <p className="footer-text">
                Designed & Built with&nbsp;
                <IconContext.Provider value={{ color: "#61DBFB", className: "footer-icon" }}>
                   <FaReact />
