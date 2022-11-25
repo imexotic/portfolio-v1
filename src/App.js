@@ -1,9 +1,13 @@
+import SocialSidebar from "./components/SocialSidebar";
+import Header from "./components/Header";
+
 import "./styles/App.css";
 
 const App = () => {
    return (
       <div>
-         <h1>React App</h1>
+         <Header />
+         <SocialSidebar />
       </div>
    );
 };
