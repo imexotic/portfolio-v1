@@ -1,6 +1,9 @@
 footer {
-   margin-top: 1rem;
    background-color: #fff;
+}
+
+.footer-line {
+   width: 100%;
 }
 
 footer .container {
@@ -12,7 +15,7 @@ footer .container {
 }
 
 footer p {
-   margin: 0.3rem 0;
+   margin: 0.5rem 0;
 }
 
 footer a {

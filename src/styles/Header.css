@@ -1,10 +1,22 @@
 header {
-   /* background-color: #1a202c; */
-   background-color: #fff;
+   position: sticky;
+   top: -100px;
+   background-color: #fff; /* background-color: #1a202c; */
+   transition-property: all;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-duration: 500ms;
+}
+
+header.show {
+   top: 0px;
+}
+
+header.hide {
+   top: -100px;
 }
 
 header .container {
-   min-height: 8vh;
+   min-height: 10vh;
    display: flex;
    justify-content: space-between;
    align-items: center;

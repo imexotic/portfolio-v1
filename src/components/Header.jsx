@@ -3,9 +3,13 @@ import "../styles/Header.css";
 import { IconContext } from "react-icons";
 import { FiMoon } from "react-icons/fi";
 
+import useScrollDirection from "../hooks/useScrollDirection";
+
 const Header = () => {
+   const scrollDirection = useScrollDirection();
+
    return (
-      <header>
+      <header className={scrollDirection === "down" ? "hide" : "show"}>
          <div className="container">
             <h1>Hubert.</h1>
             <div className="links">
@@ -31,7 +35,7 @@ const Header = () => {
                            <>
                               <FiMoon />
                            </>
-                        </IconContext.Provider>{" "}
+                        </IconContext.Provider>
                      </div>
                   </li>
                </ul>

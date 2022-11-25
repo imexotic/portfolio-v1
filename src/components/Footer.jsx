@@ -7,6 +7,7 @@ const Footer = () => {
    return (
       <footer>
          <div className="container">
+            <hr className="footer-line" />
             <p>
                Designed & Built with&nbsp;
                <IconContext.Provider value={{ color: "#61DBFB", className: "footer-icon" }}>
