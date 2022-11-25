@@ -1,0 +1,40 @@
+.social-sidebar {
+   position: fixed;
+   bottom: -1px;
+   left: 5%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.social-sidebar ul {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.social-sidebar ul li {
+   margin: 1rem 0;
+}
+
+.social-sidebar .sidebar-icon {
+   font-size: 25px;
+   stroke-width: 1.5px;
+   color: #000;
+   transition: all 0.2s linear;
+}
+
+.social-sidebar .sidebar-icon:hover {
+   color: #805ad5;
+   transform: translateY(-3px);
+}
+
+.social-sidebar .line {
+   margin-top: 2rem;
+   height: 100px;
+   border: 2px solid #2d3748;
+   border-radius: 20px;
+   width: 1px;
+   background-color: #2d3748;
+}
