@@ -7,18 +7,21 @@ const Footer = () => {
    return (
       <footer>
          <div className="container">
-            <hr className="footer-line" />
+            {/* <hr className="footer-line" /> */}
             <p className="footer-text">
-               Designed & Built with&nbsp;
+               Site developed with &nbsp;
                <IconContext.Provider value={{ color: "#61DBFB", className: "footer-icon" }}>
                   <FaReact />
                </IconContext.Provider>
-               &nbsp;by&nbsp;
+               &nbsp;
+            </p>
+            <p className="copyright">
+               &copy;&nbsp;
                <a href="about" className="">
                   Hubert Stoklosa
                </a>
+               &nbsp; 2022 — All Rights Reserved
             </p>
-            <p className="copyright">&copy; 2022 — All Rights Reserved</p>
          </div>
       </footer>
    );

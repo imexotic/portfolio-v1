@@ -7,7 +7,7 @@ footer {
 }
 
 footer .container {
-   height: 10vh;
+   height: 15vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -23,12 +23,6 @@ footer p {
    font-weight: 400;
 }
 
-footer a {
-   text-decoration: underline;
-   text-underline-offset: 3px;
-   color: var(--secondary-color);
-}
-
 .footer-icon {
    vertical-align: bottom;
    font-size: 1.2rem;
@@ -37,4 +31,11 @@ footer a {
 .copyright {
    font-size: 0.85rem;
    font-weight: 400;
+   color: var(--primary-color);
+}
+
+footer a {
+   text-decoration: underline;
+   text-underline-offset: 3px;
+   color: var(--secondary-color);
 }
