@@ -1,9 +1,31 @@
 import "../styles/Hero.css";
+import me from "../assets/me.jpg";
 
 const Hero = () => {
    return (
-      <section>
-         <div className="container"></div>
+      <section className="hero-section">
+         <div className="container">
+            <div className="hero-content">
+               <h3 className="hero-pretitle">👋 Hi there, my name is</h3>
+               <h1 className="hero-title">Hubert Stoklosa</h1>
+               <h2 className="hero-subtitle">
+                  <span>{"{ "}</span>
+                  student & developer
+                  <span>{" }"}</span>
+               </h2>
+               <p className="hero-text">
+                  I'm a 1st year Computer Science student at{" "}
+                  <a href="#" className="url-link">
+                     CUL
+                  </a>{" "}
+                  currently looking for a Software Engineering Intern position. Passionate about creating applications in various programming languages using the knowledge acquired over the years.
+               </p>
+               <button className="hero-cta">Resume</button>
+            </div>
+            <div className="hero-image">
+               <img src={me} alt="me" />
+            </div>
+         </div>
       </section>
    );
 };

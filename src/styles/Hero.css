@@ -1,3 +1,87 @@
-section .container {
-   min-height: 200vh;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+.hero-section {
+   background-color: var(--background);
+}
+
+.hero-section .container {
+   min-height: 85vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hero-image img {
+   width: 230px;
+   border-radius: 0.3rem;
+}
+
+.hero-image {
+   position: relative;
+   right: 25px;
+   z-index: 500;
+}
+
+.hero-image::before {
+   content: "";
+   position: absolute;
+   border: 3px solid var(--secondary-color);
+   border-radius: 0.3rem;
+   transform: translate(15px, 10px);
+   width: 100%;
+   z-index: -1;
+   height: 100%;
+   transition: transform 0.2s linear;
+}
+
+.hero-image:hover::before {
+   transform: translate(7px, 5px);
+}
+
+.hero-pretitle {
+   color: var(--primary-color);
+   font-size: 1rem;
+   font-weight: 500;
+   margin-bottom: 0.5rem;
+}
+
+.hero-title {
+   font-family: "";
+   font-size: 3.5rem;
+   font-weight: 500;
+   color: var(--primary-color);
+   font-family: "Inter", monospace;
+}
+
+.hero-subtitle {
+   /* color: #7f97a1; */
+   /* color: var(--third-color); */
+   color: var(--third-color);
+   font-weight: 400;
+}
+
+.hero-subtitle span {
+   color: #4e5d63;
+   /* color: #424d4d; */
+}
+
+.hero-text {
+   margin-top: 1.5rem;
+   max-width: 80%;
+   font-size: 1.2rem;
+   color: var(--primary-color);
+}
+
+.hero-cta {
+   margin-top: 2rem;
+   padding: 0.8rem 1.3rem;
+   color: var(--primary-color);
+   border: 1px solid var(--card);
+   border-radius: 0.2rem;
+   transition: background-color 0.3s linear;
+}
+
+.hero-cta:hover {
+   background-color: var(--hover);
+   color: var(--primary-color);
 }
