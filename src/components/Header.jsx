@@ -6,10 +6,10 @@ import { FiSun, FiMoon } from "react-icons/fi";
 import useScrollDirection from "../hooks/useScrollDirection";
 
 const Header = ({ theme, toggleTheme }) => {
-   const scrollDirection = useScrollDirection();
+   const [scrollPosition, scrollDirection] = useScrollDirection();
 
    return (
-      <header className={scrollDirection === "down" ? "hide" : "show"}>
+      <header className={`${scrollDirection === "down" ? "hide" : "show"} ${scrollPosition === 0 ? "top" : "scroll"}`}>
          <div className="container">
             <h1>Hubert.</h1>
             <div className="links">

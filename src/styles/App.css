@@ -42,7 +42,14 @@ ul {
    list-style: none;
 }
 
+.url-link {
+   text-decoration: underline;
+   text-underline-offset: 3px;
+   color: var(--secondary-color);
+}
+
 .container {
-   max-width: 60%;
+   width: 60%;
+   max-width: 1000px;
    margin: 0 auto;
 }
