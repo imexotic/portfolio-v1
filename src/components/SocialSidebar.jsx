@@ -8,7 +8,7 @@ const SocialSidebar = () => {
       <div className="social-sidebar">
          <ul>
             <li>
-               <a href="#xd">
+               <a href="https://github.com/imexotic/">
                   <IconContext.Provider value={{ className: "sidebar-icon" }}>
                      <>
                         <FiGithub />
@@ -17,7 +17,7 @@ const SocialSidebar = () => {
                </a>
             </li>
             <li>
-               <a href="#xd">
+               <a href="https://www.linkedin.com/in/hubert-stoklosa-8b9416224/">
                   <IconContext.Provider value={{ className: "sidebar-icon" }}>
                      <>
                         <FiLinkedin />
@@ -26,7 +26,7 @@ const SocialSidebar = () => {
                </a>
             </li>
             <li>
-               <a href="#xd">
+               <a href="mailto:hubert.stoklosa23@gmail.com">
                   <IconContext.Provider value={{ className: "sidebar-icon" }}>
                      <>
                         <FiMail />
