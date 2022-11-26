@@ -1,11 +1,11 @@
 import "../styles/Header.css";
 
 import { IconContext } from "react-icons";
-import { FiMoon } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 import useScrollDirection from "../hooks/useScrollDirection";
 
-const Header = () => {
+const Header = ({ theme, toggleTheme }) => {
    const scrollDirection = useScrollDirection();
 
    return (
@@ -30,13 +30,11 @@ const Header = () => {
                      </a>
                   </li>
                   <li>
-                     <div className="theme-btn">
+                     <button className="theme-btn" onClick={toggleTheme}>
                         <IconContext.Provider value={{ className: "theme-icon" }}>
-                           <>
-                              <FiMoon />
-                           </>
+                           <>{theme === "dark" ? <FiSun /> : <FiMoon />}</>
                         </IconContext.Provider>
-                     </div>
+                     </button>
                   </li>
                </ul>
             </div>

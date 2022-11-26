@@ -22,7 +22,7 @@
    font-size: 25px;
    stroke-width: 1.9px;
    color: var(--primary-color);
-   transition: all 0.2s linear;
+   transition: color, transform 0.2s linear;
 }
 
 .social-sidebar .sidebar-icon:hover {

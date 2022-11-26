@@ -2,7 +2,7 @@ header {
    position: sticky;
    top: -100px;
    background-color: var(--background); /* background-color: #1a202c; */
-   transition-property: all;
+   transition-property: top;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    transition-duration: 500ms;
 }
@@ -72,16 +72,18 @@ header .links ul {
 .theme-btn {
    display: flex;
    padding: 0.5rem;
-   border: 1px solid #e2e8f0;
+   background-color: var(--background);
+   border: 1px solid var(--card);
    border-radius: 5px;
    cursor: pointer;
 }
 
 .theme-icon {
    font-size: 20px;
+   color: var(--primary-color);
 }
 
 .theme-btn:hover {
    background-color: var(--hover);
-   transition: all 0.3s linear;
+   transition: background-color 0.3s linear;
 }
