@@ -49,12 +49,14 @@
 
 .form-section input,
 .form-section textarea {
+   font-family: "Inter", monospace;
+   color: var(--primary-color);
+   background-color: var(--card);
    width: 100%;
+   padding: 0.8rem 1.2rem;
    border: 1px solid var(--border);
    border-radius: 0.2rem;
-   padding: 0.8rem 1.2rem;
    transition: border 0.2s ease-in-out;
-   background-color: var(--card);
 }
 
 .form-section input:focus,
