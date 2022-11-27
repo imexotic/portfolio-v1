@@ -1,0 +1,81 @@
+#contact-section {
+   background-color: var(--background);
+   min-height: 75vh;
+   padding: 5rem 0;
+}
+
+#contact-section .container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+#contact-section .title {
+   font-size: 3rem;
+   text-align: center;
+}
+
+#contact-section .description {
+   margin: 0.5rem 0 1.5rem 0;
+   text-align: center;
+   min-width: 70%;
+}
+
+.contact-form {
+   width: 50%;
+   min-width: 70%;
+   display: flex;
+   flex-direction: column;
+   place-items: center;
+}
+
+.contact-form .form-section {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   margin-bottom: 1.5rem;
+}
+
+.form-section label {
+   margin-bottom: 0.4rem;
+   font-size: 1.2rem;
+   color: var(--primary-color);
+}
+
+.form-section textarea {
+   height: 150px;
+}
+
+.form-section input,
+.form-section textarea {
+   width: 100%;
+   border: 1px solid var(--hover);
+   border-radius: 0.2rem;
+   padding: 0.8rem 1.2rem;
+   transition: border 0.2s ease-in-out;
+   background-color: var(--card);
+}
+
+.form-section input:focus,
+.form-section textarea:focus {
+   outline: none !important;
+   border: 1px solid var(--secondary-color);
+}
+
+.form-section #message-input {
+   resize: vertical;
+}
+
+.contact-form .form-submit {
+   padding: 0.8rem 1.3rem;
+   color: var(--primary-color);
+   border: 1px solid var(--card);
+   border-radius: 0.2rem;
+   transition: background-color 0.3s linear;
+}
+
+.contact-form .form-submit:hover {
+   background-color: var(--hover);
+   color: var(--primary-color);
+}

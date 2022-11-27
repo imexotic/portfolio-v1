@@ -34,7 +34,8 @@ body {
    background-color: var(--background);
 }
 
-button {
+button,
+input[type="submit"] {
    background: 0;
    outline: 0;
    border: 0;
