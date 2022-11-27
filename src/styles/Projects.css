@@ -1,18 +1,18 @@
-section.project-section {
+section#project-section {
    background-color: var(--background);
 }
 
-.project-section .container {
+#project-section .container {
    min-height: 75vh;
    padding: 2rem 0;
 }
 
-.project-section h1 {
+#project-section h1 {
    font-size: 3rem;
    color: var(--primary-color);
 }
 
-.project-section .projects {
+#project-section .projects {
    display: grid;
    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
    grid-gap: 2rem;
@@ -63,12 +63,12 @@ section.project-section {
    vertical-align: bottom;
 }
 
-.project-section .subtitle {
+#project-section .subtitle {
    color: var(--primary-color);
    margin: 0.5rem 0 1.5rem 0;
 }
 
-.project-section .link {
+#project-section .link {
    color: var(--secondary-color);
    text-decoration: underline;
    text-underline-offset: 3px;

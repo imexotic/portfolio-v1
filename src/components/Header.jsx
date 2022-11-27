@@ -15,17 +15,17 @@ const Header = ({ theme, toggleTheme }) => {
             <div className="links">
                <ul>
                   <li>
-                     <a href="#about" className="link">
+                     <a href="#hero-section" className="link">
                         About
                      </a>
                   </li>
                   <li>
-                     <a href="#projects" className="link">
+                     <a href="#project-section" className="link">
                         Projects
                      </a>
                   </li>
                   <li>
-                     <a href="#contact" className="link">
+                     <a href="#contact-section" className="link">
                         Contact
                      </a>
                   </li>

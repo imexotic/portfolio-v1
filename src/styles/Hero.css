@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
 
-.hero-section {
+#hero-section {
    background-color: var(--background);
 }
 
-.hero-section .container {
+#hero-section .container {
    min-height: 70vh;
    display: flex;
    justify-content: space-between;

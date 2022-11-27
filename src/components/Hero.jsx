@@ -3,7 +3,7 @@ import me from "../assets/me.jpg";
 
 const Hero = () => {
    return (
-      <section className="hero-section">
+      <section id="hero-section">
          <div className="container">
             <div className="hero-content">
                <h3 className="hero-pretitle">👋 Hi there, my name is</h3>

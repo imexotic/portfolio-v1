@@ -5,7 +5,7 @@ import { FiCode, FiEye } from "react-icons/fi";
 
 const Projects = () => {
    return (
-      <section className="project-section">
+      <section id="project-section">
          <div className="container">
             <h1>Projects</h1>
             <p className="subtitle">
