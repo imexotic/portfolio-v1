@@ -52,7 +52,7 @@
 
 .hero-title {
    font-family: "";
-   font-size: 3.5rem;
+   font-size: clamp(46px, 5vw, 56px);
    font-weight: 500;
    color: var(--primary-color);
    font-family: "Inter", monospace;

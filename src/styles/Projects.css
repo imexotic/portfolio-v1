@@ -8,7 +8,7 @@ section#project-section {
 }
 
 #project-section h1 {
-   font-size: 3rem;
+   font-size: clamp(38px, 5vw, 48px);
    color: var(--primary-color);
 }
 
