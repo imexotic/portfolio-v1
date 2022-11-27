@@ -59,8 +59,9 @@ section#project-section {
 
 .project-card .icon {
    color: var(--primary-color);
-   font-size: 1.3rem;
+   font-size: 1rem;
    vertical-align: bottom;
+   transition: color 0.2s ease-in-out;
 }
 
 #project-section .subtitle {

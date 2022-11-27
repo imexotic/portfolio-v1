@@ -25,7 +25,7 @@ const Projects = () => {
                            <FiCode />
                         </>
                      </IconContext.Provider>
-                     &nbsp;Code
+                     &nbsp;&nbsp;Code
                   </a>
                </div>
 
@@ -39,7 +39,7 @@ const Projects = () => {
                               <FiCode />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Code
+                        &nbsp;&nbsp;Code
                      </a>
 
                      <a href="#" className="link">
@@ -48,7 +48,7 @@ const Projects = () => {
                               <FiEye />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Live
+                        &nbsp;&nbsp;Live
                      </a>
                   </div>
                </div>
@@ -63,7 +63,7 @@ const Projects = () => {
                               <FiCode />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Code
+                        &nbsp;&nbsp;Code
                      </a>
 
                      <a href="#" className="link">
@@ -72,7 +72,7 @@ const Projects = () => {
                               <FiEye />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Live
+                        &nbsp;&nbsp;Live
                      </a>
                   </div>
                </div>
@@ -87,7 +87,7 @@ const Projects = () => {
                               <FiCode />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Code
+                        &nbsp;&nbsp;Code
                      </a>
 
                      <a href="#" className="link">
@@ -96,7 +96,7 @@ const Projects = () => {
                               <FiEye />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Live
+                        &nbsp;&nbsp;Live
                      </a>
                   </div>
                </div>
@@ -111,7 +111,7 @@ const Projects = () => {
                               <FiCode />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Code
+                        &nbsp;&nbsp;Code
                      </a>
 
                      <a href="#" className="link">
@@ -120,7 +120,7 @@ const Projects = () => {
                               <FiEye />
                            </>
                         </IconContext.Provider>
-                        &nbsp;Live
+                        &nbsp;&nbsp;Live
                      </a>
                   </div>
                </div>
