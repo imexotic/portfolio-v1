@@ -5,7 +5,7 @@
 }
 
 .hero-section .container {
-   min-height: 85vh;
+   min-height: 70vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -36,6 +36,11 @@
 
 .hero-image:hover::before {
    transform: translate(7px, 5px);
+}
+
+.hero-content {
+   max-width: 700px;
+   min-width: 400px;
 }
 
 .hero-pretitle {

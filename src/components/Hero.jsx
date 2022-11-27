@@ -15,7 +15,7 @@ const Hero = () => {
                </h2>
                <p className="hero-text">
                   I'm a 1st year Computer Science student at{" "}
-                  <a href="#" className="url-link">
+                  <a href="https://www.city.ac.uk/" className="url-link">
                      CUL
                   </a>{" "}
                   currently looking for a Software Engineering Intern position. Passionate about creating applications in various programming languages using the knowledge acquired over the years.

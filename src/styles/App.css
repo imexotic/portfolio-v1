@@ -42,6 +42,14 @@ button {
    font-family: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+   color: var(--primary-color);
+}
+
 a {
    text-decoration: none;
 }
@@ -57,7 +65,7 @@ ul {
 }
 
 .container {
-   width: 70%;
-   max-width: 1000px;
+   width: 75%;
+   max-width: 900px;
    margin: 0 auto;
 }

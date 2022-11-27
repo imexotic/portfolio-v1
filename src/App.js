@@ -22,6 +22,7 @@ const App = () => {
          <Header theme={theme} toggleTheme={toggleTheme} />
          <SocialSidebar />
          <Hero />
+         <Projects />
          <Footer />
       </div>
    );
