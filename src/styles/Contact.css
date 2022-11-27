@@ -50,7 +50,7 @@
 .form-section input,
 .form-section textarea {
    width: 100%;
-   border: 1px solid var(--hover);
+   border: 1px solid var(--border);
    border-radius: 0.2rem;
    padding: 0.8rem 1.2rem;
    transition: border 0.2s ease-in-out;

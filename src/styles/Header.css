@@ -85,7 +85,7 @@ header .links ul {
    display: flex;
    padding: 0.5rem;
    background-color: var(--background);
-   border: 1px solid var(--hover);
+   border: 1px solid var(--border);
    border-radius: 5px;
    cursor: pointer;
 }
