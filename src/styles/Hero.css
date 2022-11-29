@@ -40,7 +40,6 @@
 
 .hero-content {
    max-width: 700px;
-   min-width: 400px;
 }
 
 .hero-pretitle {
@@ -48,6 +47,14 @@
    font-size: 1rem;
    font-weight: 500;
    margin-bottom: 0.5rem;
+}
+
+.hero-pretitle .wave {
+   animation-name: wave-animation;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   transform-origin: 70% 70%;
+   display: inline-block;
 }
 
 .hero-title {
@@ -66,13 +73,14 @@
 }
 
 .hero-subtitle span {
-   color: #4e5d63;
+   /* color: #4e5d63; */
+   color: var(--primary-color);
    /* color: #424d4d; */
 }
 
 .hero-text {
    margin-top: 1.5rem;
-   max-width: 80%;
+   width: 90%;
    font-size: 1.2rem;
    color: var(--primary-color);
 }
@@ -89,4 +97,39 @@
 .hero-cta:hover {
    background-color: var(--hover);
    color: var(--primary-color);
+}
+
+@media screen and (max-width: 930px) {
+   #hero-section .container {
+      flex-direction: column;
+   }
+}
+
+/* Animations */
+
+@keyframes wave-animation {
+   0% {
+      transform: rotate(0deg);
+   }
+   10% {
+      transform: rotate(14deg);
+   }
+   20% {
+      transform: rotate(-8deg);
+   }
+   30% {
+      transform: rotate(14deg);
+   }
+   40% {
+      transform: rotate(-4deg);
+   }
+   50% {
+      transform: rotate(10deg);
+   }
+   60% {
+      transform: rotate(0deg);
+   } /* Reset for the last half to pause */
+   100% {
+      transform: rotate(0deg);
+   }
 }
