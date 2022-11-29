@@ -1,4 +1,4 @@
-import "./Header.css";
+import "./styles/Header.css";
 
 import { IconContext } from "react-icons";
 import { FiSun, FiMoon } from "react-icons/fi";
