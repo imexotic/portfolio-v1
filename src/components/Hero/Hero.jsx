@@ -1,5 +1,5 @@
-import "../styles/Hero.css";
-import me from "../assets/me.jpg";
+import "./Hero.css";
+import me from "../../assets/me.jpg";
 
 const Hero = () => {
    return (

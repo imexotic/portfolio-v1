@@ -1,15 +1,8 @@
-import { useState, useEffect } from "react";
-
 import useLocalStorage from "./hooks/useLocalStorage";
 
-import SocialSidebar from "./components/SocialSidebar";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
+import { Header, Footer, Hero, Projects, Contact, SocialSidebar } from "./components/index.js";
 
-import "./styles/App.css";
+import "./App.css";
 
 const App = () => {
    const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;

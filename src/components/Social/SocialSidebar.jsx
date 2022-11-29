@@ -1,4 +1,4 @@
-import "../styles/SocialSidebar.css";
+import "./SocialSidebar.css";
 
 import { IconContext } from "react-icons";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";

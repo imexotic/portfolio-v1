@@ -1,9 +1,9 @@
-import "../styles/Header.css";
+import "./Header.css";
 
 import { IconContext } from "react-icons";
 import { FiSun, FiMoon } from "react-icons/fi";
 
-import useScrollDirection from "../hooks/useScrollDirection";
+import useScrollDirection from "../../hooks/useScrollDirection";
 
 const Header = ({ theme, toggleTheme }) => {
    const [scrollPosition, scrollDirection] = useScrollDirection();
