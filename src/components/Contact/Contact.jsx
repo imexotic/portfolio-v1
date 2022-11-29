@@ -1,4 +1,4 @@
-import "./styles/Contact.css";
+import "./Contact.css";
 
 import ContactForm from "./ContactForm";
 

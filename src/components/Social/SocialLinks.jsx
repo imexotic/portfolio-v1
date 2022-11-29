@@ -1,4 +1,4 @@
-import "./styles/SocialLinks.css";
+import "./SocialLinks.css";
 
 import { IconContext } from "react-icons";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";

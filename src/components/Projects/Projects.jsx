@@ -1,4 +1,4 @@
-import "./styles/Projects.css";
+import "./Projects.css";
 
 import { IconContext } from "react-icons";
 import { FiCode, FiEye } from "react-icons/fi";

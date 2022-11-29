@@ -1,4 +1,4 @@
-import "./styles/SocialSidebar.css";
+import "./SocialSidebar.css";
 import SocialLinks from "./SocialLinks";
 
 const SocialSidebar = () => {
