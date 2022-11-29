@@ -1,33 +1,10 @@
 .social-sidebar {
    position: fixed;
    bottom: -1px;
-   left: 5%;
+   left: 3%;
    display: flex;
    align-items: center;
    flex-direction: column;
-}
-
-.social-sidebar ul {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-}
-
-.social-sidebar ul li {
-   margin: 1rem 0;
-}
-
-.social-sidebar .sidebar-icon {
-   font-size: 25px;
-   stroke-width: 1.9px;
-   color: var(--primary-color);
-   transition: color, transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.social-sidebar .sidebar-icon:hover {
-   color: var(--secondary-color);
-   transform: translateY(-3px);
 }
 
 .social-sidebar .line {

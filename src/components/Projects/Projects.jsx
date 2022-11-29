@@ -124,10 +124,6 @@ const Projects = () => {
                      </a>
                   </div>
                </div>
-
-               {/* <div className="project-card"></div>
-               <div className="project-card"></div>
-               <div className="project-card"></div> */}
             </div>
          </div>
       </section>

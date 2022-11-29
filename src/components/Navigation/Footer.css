@@ -2,12 +2,20 @@ footer {
    background-color: var(--background);
 }
 
+footer .social-links {
+   flex-direction: row;
+   display: none;
+}
+
+footer .social-links .social-link {
+   margin: 1rem 1rem;
+}
+
 .footer-line {
    width: 100%;
 }
 
 footer .container {
-   height: 15vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -32,10 +40,4 @@ footer p {
    font-size: 0.85rem;
    font-weight: 400;
    color: var(--primary-color);
-}
-
-footer a {
-   text-decoration: underline;
-   text-underline-offset: 3px;
-   color: var(--secondary-color);
 }

@@ -3,11 +3,14 @@ import "./Footer.css";
 import { IconContext } from "react-icons";
 import { FaReact } from "react-icons/fa";
 
+import { SocialLinks } from "../index";
+
 const Footer = () => {
    return (
       <footer>
          <div className="container">
             {/* <hr className="footer-line" /> */}
+            <SocialLinks />
             <p className="footer-text">
                Site developed with &nbsp;
                <IconContext.Provider value={{ color: "#61DBFB", className: "footer-icon" }}>
@@ -17,7 +20,7 @@ const Footer = () => {
             </p>
             <p className="copyright">
                &copy;&nbsp;
-               <a href="about" className="">
+               <a href="about" className="url-link">
                   Hubert Stoklosa
                </a>
                &nbsp; 2022 — All Rights Reserved

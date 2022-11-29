@@ -68,9 +68,29 @@ ul {
    color: var(--secondary-color);
 }
 
+/* Shared Components */
+
+@media screen and (max-width: 767px) {
+   .container {
+      width: 90% !important;
+   }
+
+   .social-sidebar {
+      display: none;
+   }
+
+   #hero-section .social-links {
+      display: flex;
+   }
+
+   footer .social-links {
+      display: flex;
+   }
+}
+
 .container {
    width: 75%;
-   max-width: 900px;
+   max-width: 1000px;
    /* min-width: 50%;
    max-width: 900px; */
    padding: 1rem;

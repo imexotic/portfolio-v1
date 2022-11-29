@@ -1,7 +1,7 @@
 #contact-section {
    background-color: var(--background);
    min-height: 75vh;
-   padding: 5rem 0;
+   padding: 3rem 0;
 }
 
 #contact-section .container {
@@ -17,14 +17,15 @@
 }
 
 #contact-section .description {
-   margin: 0.5rem 0 4rem 0;
+   margin-top: 0.5rem;
    text-align: center;
    min-width: 70%;
 }
 
 .contact-form {
-   width: 50%;
-   min-width: 70%;
+   width: 60%;
+   min-width: 350px;
+   margin-top: 3rem;
    display: flex;
    flex-direction: column;
    place-items: center;
