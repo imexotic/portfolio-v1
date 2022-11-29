@@ -6,7 +6,8 @@
    --secondary-color: #805ad5;
    --third-color: #1ea1f1;
    --hover: #edf2f7;
-   --card: #edf2f7;
+   /* --card: #edf2f7; */
+   --card: #f0f1f1;
    --border: #99a0a562;
 }
 
@@ -70,5 +71,8 @@ ul {
 .container {
    width: 75%;
    max-width: 900px;
+   /* min-width: 50%;
+   max-width: 900px; */
+   padding: 1rem;
    margin: 0 auto;
 }
