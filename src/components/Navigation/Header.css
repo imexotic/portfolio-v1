@@ -40,24 +40,24 @@ header h1 {
    font-weight: 600;
 }
 
-header .links ul {
+header nav ul {
    display: flex;
    align-items: center;
    justify-content: center;
 }
 
-.links ul li {
+.navbar .nav-item {
    margin: 0 1rem;
 }
 
-.links .link {
+.navbar .nav-link {
+   font-size: 0.85rem;
    color: var(--primary-color);
    position: relative;
-   font-size: 0.85rem;
 }
 
-.links .link::before,
-.links .link::after {
+.navbar .nav-link::before,
+.navbar .nav-link::after {
    /* bottom border expanding */
    content: "";
    position: absolute;
@@ -68,16 +68,16 @@ header .links ul {
    transition: all 0.2s ease-in-out;
 }
 
-.links .link::before {
+.navbar .nav-link::before {
    right: 50%;
 }
 
-.links .link::after {
+.navbar .nav-link::after {
    left: 50%;
 }
 
-.links .link:hover::after,
-.links .link:hover::before {
+.navbar .nav-link:hover::after,
+.navbar .nav-link:hover::before {
    width: 50%;
 }
 
