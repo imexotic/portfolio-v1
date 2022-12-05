@@ -1,19 +1,24 @@
+import { useState, useEffect } from "react";
+
 import "./Header.css";
 
 import { IconContext } from "react-icons";
-import { FiSun, FiMoon } from "react-icons/fi";
+import { FiSun, FiMoon, FiMenu } from "react-icons/fi";
 
 import useScrollDirection from "../../hooks/useScrollDirection";
 
 const Header = ({ theme, toggleTheme }) => {
    const [scrollPosition, scrollDirection] = useScrollDirection();
+   const [toggle, setToggle] = useState(false);
+
+   toggle ? document.body.classList.add("no-scroll") : document.body.classList.remove("no-scroll");
 
    return (
-      <header className={`${scrollDirection === "down" ? "hide" : "show"} ${scrollPosition === 0 ? "top" : "scroll"}`}>
+      <header className={`${scrollDirection === "down" ? "hide" : "show"} ${scrollPosition === 0 ? "top" : "scroll"} ${toggle ? "show-menu" : "hide-menu"}`}>
          <div className="container">
             <h1>Hubert.</h1>
             <nav className="navbar">
-               <ul>
+               <ul className={toggle === true ? "show-nav" : "hide-nav"}>
                   <li className="nav-item">
                      <a href="#hero-section" className="nav-link">
                         About
@@ -29,15 +34,22 @@ const Header = ({ theme, toggleTheme }) => {
                         Contact
                      </a>
                   </li>
-                  <li className="nav-item">
-                     <button className="theme-btn" onClick={toggleTheme}>
-                        <IconContext.Provider value={{ className: "theme-icon" }}>
-                           <>{theme === "dark" ? <FiSun /> : <FiMoon />}</>
-                        </IconContext.Provider>
-                     </button>
-                  </li>
                </ul>
             </nav>
+            <div className="header-btns">
+               <button className="header-btn" onClick={toggleTheme}>
+                  <IconContext.Provider value={{ className: "theme-icon" }}>
+                     <>{theme === "dark" ? <FiSun /> : <FiMoon />}</>
+                  </IconContext.Provider>
+               </button>
+               <button className="header-btn burger-btn" onClick={() => setToggle(!toggle)}>
+                  <IconContext.Provider value={{ className: "theme-icon" }}>
+                     <>
+                        <FiMenu />
+                     </>
+                  </IconContext.Provider>
+               </button>
+            </div>
          </div>
       </header>
    );
