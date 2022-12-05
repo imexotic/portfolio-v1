@@ -1,6 +1,6 @@
-import "./Hero.css";
+import "../../styles/Hero.css";
 import me from "../../assets/me.jpg";
-import SocialLinks from "../Social/SocialLinks";
+import SocialLinks from "../SocialLinks";
 
 const Hero = () => {
    return (

@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import "./Header.css";
+import "../../styles/Header.css";
 
 import { IconContext } from "react-icons";
 import { FiSun, FiMoon, FiMenu } from "react-icons/fi";

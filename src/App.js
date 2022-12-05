@@ -2,7 +2,7 @@ import useLocalStorage from "./hooks/useLocalStorage";
 
 import { Header, Footer, Hero, Projects, Contact, SocialSidebar } from "./components/index.js";
 
-import "./App.css";
+import "./styles/App.css";
 
 const App = () => {
    const defaultDark = window.matchMedia("(prefers-color-scheme: dark)").matches;

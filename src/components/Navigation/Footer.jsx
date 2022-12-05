@@ -1,4 +1,4 @@
-import "./Footer.css";
+import "../../styles/Footer.css";
 
 import { IconContext } from "react-icons";
 import { FaReact } from "react-icons/fa";
