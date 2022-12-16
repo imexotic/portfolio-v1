@@ -19,7 +19,7 @@ const Footer = () => {
             </p>
             <p className={styles["copyright"]}>
                &copy;&nbsp;
-               <a href="about" className={styles["url-link"]}>
+               <a href="about" className="url-link">
                   Hubert Stoklosa
                </a>
                &nbsp; 2022 — All Rights Reserved

@@ -42,7 +42,7 @@ const Projects = () => {
                         &nbsp;&nbsp;Code
                      </a>
 
-                     <a href="#" className="link">
+                     <a href="#" className={styles["link"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiEye />
