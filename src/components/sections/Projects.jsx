@@ -1,26 +1,26 @@
-import "../../styles/Projects.css";
+import styles from "../../styles/projects.module.css";
 
 import { IconContext } from "react-icons";
 import { FiCode, FiEye } from "react-icons/fi";
 
 const Projects = () => {
    return (
-      <section id="project-section">
-         <div className="container">
-            <h1>Projects</h1>
-            <p className="subtitle">
+      <section id={styles["project-section"]}>
+         <div className={`${styles["container"]} container`}>
+            <h1 className={styles["title"]}>Projects</h1>
+            <p className={styles["subtitle"]}>
                Here's a list of my projects made using 1s and 0s (more work sourced on{" "}
-               <a href="https://github.com/imexotic" className="link">
+               <a href="https://github.com/imexotic" className={styles["link"]}>
                   GitHub
                </a>
                )
             </p>
-            <div className="projects">
-               <div className="project-card">
-                  <h3 className="title">imexotic/ExoBot</h3>
-                  <p className="description">🤖 An open-source & multi-purpose discord bot running on Discord.py.</p>
-                  <a href="#" className="link">
-                     <IconContext.Provider value={{ className: "icon" }}>
+            <div className={styles["projects"]}>
+               <div className={styles["project-card"]}>
+                  <h3 className={styles["project-title"]}>imexotic/ExoBot</h3>
+                  <p className={styles["project-description"]}>🤖 An open-source & multi-purpose discord bot running on Discord.py.</p>
+                  <a href="#" className={styles["link"]}>
+                     <IconContext.Provider value={{ className: styles["icon"] }}>
                         <>
                            <FiCode />
                         </>
@@ -29,12 +29,12 @@ const Projects = () => {
                   </a>
                </div>
 
-               <div className="project-card">
-                  <h3 className="title">Ticket System</h3>
-                  <p className="description">🎫 Lorem Lorem ipsum dolor sit amet consectetur.</p>
-                  <div className="project-links">
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+               <div className={styles["project-card"]}>
+                  <h3 className={styles["project-title"]}>Ticket System</h3>
+                  <p className={styles["project-description"]}>🎫 Lorem Lorem ipsum dolor sit amet consectetur.</p>
+                  <div className={styles["project-links"]}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiCode />
                            </>
@@ -43,7 +43,7 @@ const Projects = () => {
                      </a>
 
                      <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiEye />
                            </>
@@ -53,12 +53,12 @@ const Projects = () => {
                   </div>
                </div>
 
-               <div className="project-card">
-                  <h3 className="title">Google Drive Clone</h3>
-                  <p className="description">📂 Lorem Lorem ipsum dolor sit amet consectetur.</p>
-                  <div className="project-links">
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+               <div className={styles["project-card"]}>
+                  <h3 className={styles["project-title"]}>Google Drive Clone</h3>
+                  <p className={styles["project-description"]}>📂 Lorem Lorem ipsum dolor sit amet consectetur.</p>
+                  <div className={styles["project-links"]}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiCode />
                            </>
@@ -66,8 +66,8 @@ const Projects = () => {
                         &nbsp;&nbsp;Code
                      </a>
 
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiEye />
                            </>
@@ -77,12 +77,12 @@ const Projects = () => {
                   </div>
                </div>
 
-               <div className="project-card">
-                  <h3 className="title">TypingSpeed (ala MonkeyType)</h3>
-                  <p className="description">⌨️ A simple Google Keep clone to make quick notes.</p>
-                  <div className="project-links">
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+               <div className={styles["project-card"]}>
+                  <h3 className={styles["project-title"]}>TypingSpeed (ala MonkeyType)</h3>
+                  <p className={styles["project-description"]}>⌨️ A simple Google Keep clone to make quick notes.</p>
+                  <div className={styles["project-links"]}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiCode />
                            </>
@@ -90,8 +90,8 @@ const Projects = () => {
                         &nbsp;&nbsp;Code
                      </a>
 
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiEye />
                            </>
@@ -101,12 +101,12 @@ const Projects = () => {
                   </div>
                </div>
 
-               <div className="project-card">
-                  <h3 className="title">Simple Google Keep Clone</h3>
-                  <p className="description">📝 A simple Google Keep clone to make quick notes.</p>
-                  <div className="project-links">
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+               <div className={styles["project-card"]}>
+                  <h3 className={styles["project-title"]}>Simple Google Keep Clone</h3>
+                  <p className={styles["project-description"]}>📝 A simple Google Keep clone to make quick notes.</p>
+                  <div className={styles["project-links"]}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiCode />
                            </>
@@ -114,8 +114,8 @@ const Projects = () => {
                         &nbsp;&nbsp;Code
                      </a>
 
-                     <a href="#" className="link">
-                        <IconContext.Provider value={{ className: "icon" }}>
+                     <a href="#" className={styles["link"]}>
+                        <IconContext.Provider value={{ className: styles["icon"] }}>
                            <>
                               <FiEye />
                            </>

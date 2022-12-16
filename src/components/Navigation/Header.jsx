@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import "../../styles/Header.css";
+import styles from "../../styles/header.module.css";
 
 import { IconContext } from "react-icons";
 import { FiSun, FiMoon, FiMenu } from "react-icons/fi";
@@ -8,42 +8,49 @@ import { FiSun, FiMoon, FiMenu } from "react-icons/fi";
 import useScrollDirection from "../../hooks/useScrollDirection";
 
 const Header = ({ theme, toggleTheme }) => {
-   const [scrollPosition, scrollDirection] = useScrollDirection();
    const [toggle, setToggle] = useState(false);
+   const [icon, setIcon] = useState(theme === "dark" ? <FiSun /> : <FiMoon />);
+   const [scrollPosition, scrollDirection] = useScrollDirection();
 
-   toggle ? document.body.classList.add("no-scroll") : document.body.classList.remove("no-scroll");
+   useEffect(() => {
+      toggle ? document.body.classList.add("no-scroll") : document.body.classList.remove("no-scroll");
+   }, [toggle]);
+
+   useEffect(() => {
+      setIcon(theme === "dark" ? <FiSun /> : <FiMoon />);
+   }, [theme]);
 
    return (
-      <header className={`${scrollDirection === "down" ? "hide" : "show"} ${scrollPosition === 0 ? "top" : "scroll"} ${toggle ? "show-menu" : "hide-menu"}`}>
-         <div className="container">
+      <header id={styles["header"]} className={`${scrollDirection === "down" ? styles["hide"] : styles["show"]} ${scrollPosition === 0 ? styles["top"] : styles["scroll"]} ${toggle ? styles["show-menu"] : styles["hide-menu"]}`}>
+         <div className={`${styles["container"]} container`}>
             <h1>Hubert.</h1>
-            <nav className="navbar">
-               <ul className={toggle === true ? "show-nav" : "hide-nav"}>
-                  <li className="nav-item">
-                     <a href="#hero-section" className="nav-link">
+            <nav className={styles["navbar"]}>
+               <ul className={toggle === true ? styles["show-nav"] : styles["hide-nav"]}>
+                  <li className={styles["nav-item"]}>
+                     <a href="#hero-section" className={styles["nav-link"]}>
                         About
                      </a>
                   </li>
-                  <li className="nav-item">
-                     <a href="#project-section" className="nav-link">
+                  <li className={styles["nav-item"]}>
+                     <a href="#project-section" className={styles["nav-link"]}>
                         Projects
                      </a>
                   </li>
-                  <li className="nav-item">
-                     <a href="#contact-section" className="nav-link">
+                  <li className={styles["nav-item"]}>
+                     <a href="#contact-section" className={styles["nav-link"]}>
                         Contact
                      </a>
                   </li>
                </ul>
             </nav>
-            <div className="header-btns">
-               <button className="header-btn" onClick={toggleTheme}>
-                  <IconContext.Provider value={{ className: "theme-icon" }}>
-                     <>{theme === "dark" ? <FiSun /> : <FiMoon />}</>
+            <div className={styles["header-btns"]}>
+               <button className={styles["header-btn"]} onClick={toggleTheme}>
+                  <IconContext.Provider value={{ className: styles["theme-icon"] }}>
+                     <>{icon}</>
                   </IconContext.Provider>
                </button>
-               <button className="header-btn burger-btn" onClick={() => setToggle(!toggle)}>
-                  <IconContext.Provider value={{ className: "theme-icon" }}>
+               <button className={(styles["header-btn"], styles["burger-btn"])} onClick={() => setToggle(!toggle)}>
+                  <IconContext.Provider value={{ className: styles["theme-icon"] }}>
                      <>
                         <FiMenu />
                      </>

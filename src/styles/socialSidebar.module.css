@@ -1,0 +1,23 @@
+.social-sidebar {
+   position: fixed;
+   bottom: -1px;
+   left: 3%;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+}
+
+.social-sidebar .line {
+   margin-top: 2rem;
+   height: 100px;
+   border: 2px solid var(--primary-color);
+   border-radius: 20px;
+   width: 1px;
+   background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 767px) {
+   .social-sidebar {
+      display: none;
+   }
+}
