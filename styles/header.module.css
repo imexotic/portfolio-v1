@@ -1,11 +1,14 @@
 #header {
-   position: sticky;
+   position: fixed; /* position: sticky before */
+   width: 100%;
    top: -100px;
    z-index: 1000;
    background-color: var(--background); /* background-color: #1a202c; */
-   transition-property: top, box-shadow;
+   /* transition-property: top, box-shadow;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-   transition-duration: 500ms;
+   transition-duration: 500ms; */
+
+   transition: top 0.5s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.2s ease-in-out;
 }
 
 #header.show {
@@ -21,17 +24,20 @@
 #header.scroll {
    /* box-shadow: 0 10px 10px -15px rgba(2, 12, 27, 0.7); */
    box-shadow: 0 2px 6px 0 rgb(0 0 0 / 12%);
+   padding: 1rem 0;
 }
 
 #header.top {
    box-shadow: none;
+   padding: 1.5rem 0;
 }
 
 #header .container {
-   min-height: 9vh;
+   min-height: 5vh;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   padding: 0;
 }
 
 #header h1 {
