@@ -23,8 +23,10 @@
 }
 
 .contact-form {
-   width: 60%;
-   min-width: 300px;
+   /* width: 60%;
+   min-width: 350px; */
+   width: 90%;
+   max-width: 500px;
    margin-top: 3rem;
    display: flex;
    flex-direction: column;
@@ -65,6 +67,11 @@
 .form-section textarea:focus {
    outline: none !important;
    border: 1px solid var(--secondary-color);
+}
+
+.form-section .wrong:focus {
+   outline: none !important;
+   border: 1px solid red !important;
 }
 
 .form-section #message-input {

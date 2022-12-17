@@ -43,7 +43,6 @@ const Header = ({ theme, toggleTheme }) => {
                   </li>
                </ul>
             </nav>
-            {/* hydration error here */}
             <div className={styles["header-btns"]}>
                <button className={styles["header-btn"]} onClick={toggleTheme}>
                   <IconContext.Provider value={{ className: styles["theme-icon"] }}>
