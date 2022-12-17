@@ -43,11 +43,11 @@ const ContactForm = () => {
          </div>
          <div className={styles["form-section"]}>
             <label htmlFor="email-input">E-mail</label>
-            <input type="email" name="email" id="email-input" onChange={handleChange} className={touched.name && !data.email ? styles["wrong"] : null} onBlur={onBlur} />
+            <input type="email" name="email" id="email-input" onChange={handleChange} className={touched.email && !data.email ? styles["wrong"] : null} onBlur={onBlur} />
          </div>
          <div className={styles["form-section"]}>
             <label htmlFor="message-input">Message</label>
-            <textarea type="text" name="message" id="message-input" onChange={handleChange} className={touched.name && !data.message ? styles["wrong"] : null} onBlur={onBlur} />
+            <textarea type="text" name="message" id="message-input" onChange={handleChange} className={touched.message && !data.message ? styles["wrong"] : null} onBlur={onBlur} />
          </div>
          <input type="submit" value="Send" className={styles["form-submit"]} disabled={!data.name || !data.email || !data.message} />
       </form>

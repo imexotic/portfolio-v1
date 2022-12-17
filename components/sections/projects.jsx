@@ -2,6 +2,7 @@ import styles from "../../styles/projects.module.css";
 
 import { IconContext } from "react-icons";
 import { FiCode, FiEye } from "react-icons/fi";
+import GitHubCalendar from "react-github-calendar";
 
 const Projects = () => {
    return (
@@ -9,7 +10,7 @@ const Projects = () => {
          <div className={`${styles["container"]} container`}>
             <h1 className={styles["title"]}>Projects</h1>
             <p className={styles["subtitle"]}>
-               Here's a list of my projects made using 1s and 0s (more work sourced on{" "}
+               Here's a list of my other noteworthy projects made using transistors (sourced on{" "}
                <a href="https://github.com/imexotic" className={styles["link"]}>
                   GitHub
                </a>
@@ -124,6 +125,10 @@ const Projects = () => {
                      </a>
                   </div>
                </div>
+            </div>
+            <div className={styles["github-calendar"]}>
+               <h2 style={{ textAlign: "center" }}>Github Contributions</h2>
+               <GitHubCalendar username="imexotic" hideMonthLabels={true} hideTotalCount={true} hideColorLegend={true} />
             </div>
          </div>
       </section>
