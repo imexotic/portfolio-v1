@@ -1,9 +1,9 @@
 #header {
-   position: fixed; /* position: sticky before */
+   position: sticky;
    width: 100%;
    top: -100px;
    z-index: 1000;
-   background-color: var(--background); /* background-color: #1a202c; */
+   background-color: var(--background);
    /* transition-property: top, box-shadow;
    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    transition-duration: 500ms; */
@@ -44,6 +44,7 @@
    color: var(--primary-color);
    font-size: 1.3rem;
    font-weight: 600;
+   user-select: none;
 }
 
 #header nav ul,

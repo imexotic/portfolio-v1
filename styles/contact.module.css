@@ -12,7 +12,7 @@
 }
 
 .title {
-   font-size: clamp(38px, 5vw, 48px);
+   font-size: clamp(28px, 5vw, 48px);
    text-align: center;
 }
 
@@ -24,7 +24,7 @@
 
 .contact-form {
    width: 60%;
-   min-width: 350px;
+   min-width: 300px;
    margin-top: 3rem;
    display: flex;
    flex-direction: column;
@@ -46,6 +46,7 @@
 
 .form-section textarea {
    height: 150px;
+   resize: vertical;
 }
 
 .form-section input,

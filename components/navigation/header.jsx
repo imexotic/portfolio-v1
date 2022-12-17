@@ -27,7 +27,7 @@ const Header = ({ theme, toggleTheme }) => {
             <nav className={styles["navbar"]}>
                <ul className={toggle === true ? styles["show-nav"] : styles["hide-nav"]}>
                   <li className={styles["nav-item"]}>
-                     <a href="#hero-section" className={styles["nav-link"]}>
+                     <a href="#about-section" className={styles["nav-link"]}>
                         About
                      </a>
                   </li>

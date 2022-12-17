@@ -30,7 +30,6 @@
 html,
 body {
    height: 100%;
-   background-color: red;
 }
 
 html {
@@ -58,6 +57,10 @@ h3,
 h4,
 p {
    color: var(--primary-color);
+}
+
+h1 {
+   font-weight: bold !important;
 }
 
 a {
@@ -117,4 +120,5 @@ ul {
    max-width: 900px; */
    padding: 1rem;
    margin: 0 auto;
+   transition: width 0.2s linear;
 }

@@ -1,6 +1,6 @@
 import useLocalStorage from "../hooks/useLocalStorage";
 import { useState, useEffect } from "react";
-import { Header, Footer, Hero, Projects, Contact, SocialSidebar } from "../components/index.js";
+import { Header, Footer, Hero, About, Projects, Contact, SocialSidebar } from "../components/index.js";
 
 const App = ({ pageProps }) => {
    const [defaultDark, setDefaultDark] = useState();
@@ -17,6 +17,7 @@ const App = ({ pageProps }) => {
          <Header theme={theme} toggleTheme={toggleTheme} {...pageProps} />
          <SocialSidebar />
          <Hero />
+         <About />
          <Projects />
          <Contact />
          <Footer />
