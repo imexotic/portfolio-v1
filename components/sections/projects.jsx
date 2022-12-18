@@ -6,7 +6,7 @@ import GitHubCalendar from "react-github-calendar";
 
 const Projects = () => {
    return (
-      <section id={styles["project-section"]}>
+      <section id="project-section">
          <div className={`${styles["container"]} container`}>
             <h1 className={styles["title"]}>Projects</h1>
             <p className={styles["subtitle"]}>

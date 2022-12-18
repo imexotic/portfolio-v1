@@ -1,8 +1,4 @@
-section#project-section {
-   background-color: var(--background);
-}
-
-#project-section .container {
+.container {
    min-height: 75vh;
    padding: 2rem 0;
 }

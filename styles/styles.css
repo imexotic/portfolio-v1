@@ -71,6 +71,20 @@ ul {
    list-style: none;
 }
 
+#about-section {
+   background-color: var(--background);
+}
+
+#project-section {
+   background-color: var(--background);
+}
+
+#contact-section {
+   background-color: var(--background);
+   min-height: 75vh;
+   padding: 3rem 0;
+}
+
 .url-link {
    text-decoration: underline;
    text-underline-offset: 3px;

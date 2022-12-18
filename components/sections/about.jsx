@@ -4,7 +4,7 @@ import heroImg from "../../public/assets/exotic.jpg";
 
 export default () => {
    return (
-      <section id={styles["about-section"]}>
+      <section id="about-section">
          <div className={`${styles["container"]} container`}>
             <div className={styles["about-image"]}>
                <Image src={heroImg} alt="me :)" className={styles["img"]} />
