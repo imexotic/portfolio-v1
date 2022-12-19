@@ -121,6 +121,12 @@ ul {
 
 /* Shared Components */
 
+@media screen and (max-width: 524px) {
+   .no-scroll {
+      overflow-y: hidden;
+   }
+}
+
 @media screen and (max-width: 767px) {
    .container {
       width: 90% !important;

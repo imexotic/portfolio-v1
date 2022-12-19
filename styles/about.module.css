@@ -106,7 +106,7 @@
    margin-top: 2rem;
    padding: 0.8rem 1.3rem;
    color: var(--primary-color);
-   border: 1px solid var(--card);
+   border: 1px solid var(--border);
    border-radius: 0.2rem;
    transition: background-color 0.3s linear;
 }
@@ -117,7 +117,7 @@
 }
 
 @media screen and (max-width: 930px) {
-   #about-section .container {
+   .container {
       flex-direction: column;
       align-items: center;
    }
@@ -137,7 +137,7 @@
 
    .about-text {
       width: 100%;
-      text-align: center;
+      /* text-align: center; */
    }
 }
 
