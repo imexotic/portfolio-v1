@@ -22,10 +22,11 @@ const handler = async (req, res) => {
             text: "Thanks for contacting me! I'll get back to you as soon as possible.",
          });
       } catch (err) {
+         console.log("lol");
          return res.status(400).json({ error: true, message: err.message });
       }
    }
-
+   console.log("lol2");
    return res.status(400).json({ error: true, message: "Bad Request" });
 };
 
