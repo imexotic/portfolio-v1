@@ -1,70 +1,86 @@
-# Getting Started with Create React App
+# <p align="center">Portfolio Website 1️⃣</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+    The first iteration of
+    <a href="https://imexotic.vercel.app/">hstoklosa.com</a>
+    created for informative purposes.
+</p>
 
-## Available Scripts
+<img src="https://github.com/imexotic/portfolio-v1/blob/main/public/assets/preview.png?raw=true" width="800"/>
 
-In the project directory, you can run:
+## Project Status
 
-### `npm start`
+The project is still in the development stage and new features will be released to suit my personal needs.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+In addition, the site has been deployed to [Vercel](https://vercel.com/) and it can be previewed at any time through there or by creating a pull request.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Project's current TODO list:
 
-### `npm test`
+-  [ ] Fix overflow issues in the Projects component
+-  [ ] Add Featured Projects + some info about them
+-  [ ] Add relevant information to the About component
+-  [ ] Install & implement an animation/transition library
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ideas / Possible implementations:
 
-### `npm run build`
+-  [ ] Database integration to store projects etc
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+-  [Next.js](https://nextjs.org/)
+-  [React + React-DOM](https://reactjs.org/)
+-  [ReactIcons](https://react-icons.github.io/react-icons/)
+-  [FramerMotion](https://www.framer.com/motion/)
+-  [Nodemailer](https://nodemailer.com/about/)
+-  [react-github-calendar](https://grubersjoe.github.io/react-github-calendar/)
+-  [react-simple-typewriter](https://www.npmjs.com/package/react-simple-typewriter)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠 Usage
 
-### `npm run eject`
+Before running development/production mode, the following commands need to be executed in order to create a local repository for local development.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```
+git clone https://github.com/imexotic/portfolio-v1.git
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### ❌ Environmental Variables
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+// Nodemailer
 
-## Learn More
+MAIL_SERVICE = ...
+MAIL_USER = ...
+MAIL_PASS = ...
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 💻 Development
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To run the site in development mode
 
-### Code Splitting
+```
+npm run dev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The previously mentioned _**Environmental Variables**_ have to be set up in a file `.env.local` in the same directory as `.sample.env` to ensure that they are being used in development mode.
 
-### Analyzing the Bundle Size
+### 🚀 Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+To run the site in production mode.
 
-### Making a Progressive Web App
+```
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+npm start
+```
 
-### Advanced Configuration
+`npm run build` should be executed on every new feature to ensure that all changes are also applied to the production site.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The site can be deployed on any [hosting provider supported by Next.js](https://nextjs.org/docs/deployment), although [Vercel](https://vercel.com/) is recommended due to its 1st class support for Next.js sites.
 
-### Deployment
+The _**Environmental Variables**_ have to be correctly set up in your chosen hosting provider for them to take full effect on the site.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📝 License
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT License](https://github.com/imexotic/ExoBot/blob/main/LICENSE)
