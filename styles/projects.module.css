@@ -83,6 +83,8 @@
    right: 0 !important;
    top: -60px;
    font-size: 2rem;
+   font-size: clamp(26px, 5vw, 32px);
+
    font-weight: 600;
    width: max-content;
    margin-bottom: 1rem;
@@ -139,17 +141,19 @@
 
 .projects {
    display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(max(340px, 10vw), 5fr));
+   place-content: center;
    grid-gap: 2rem;
 }
 
 .projects .project-card {
    display: flex;
    flex-direction: column;
+   /* min-height: 150px; */
+   padding: 1.5rem;
+   border-radius: 0.5rem;
    background-color: var(--card);
    box-shadow: 0 10px 10px -13px rgba(2, 12, 27, 0.7);
-   border-radius: 0.5rem;
-   padding: 1.5rem;
 }
 
 .project-card .project-title {
@@ -159,10 +163,12 @@
 
 .project-card .project-description {
    margin-bottom: 1.5rem;
+   overflow-wrap: break-word;
 }
 
 .project-card .project-links {
    display: flex;
+   margin-top: auto;
 }
 
 .project-card .link {
