@@ -38,7 +38,6 @@ html {
 
 body {
    font-family: "Inter", monospace;
-   /* background-color: #f5f5f5; */
    background-color: var(--background);
 }
 
@@ -82,7 +81,6 @@ ul {
 #contact-section {
    background-color: var(--background);
    min-height: 75vh;
-   padding: 3rem 0;
 }
 
 .url-link {

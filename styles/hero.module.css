@@ -21,7 +21,7 @@
 .line {
    position: absolute;
    width: 110vw;
-   transform: rotate(-5deg);
+   transform: rotate(-3deg);
    height: 250px;
    background-color: var(--primary-color);
    opacity: 0.1;
