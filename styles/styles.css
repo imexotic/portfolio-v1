@@ -9,6 +9,7 @@
    /* --card: #edf2f7; */
    --card: #f0f1f1;
    --border: #99a0a562;
+   --project-overlay: rgba(45, 55, 72, 0.8);
 }
 
 [data-theme="dark"] {
