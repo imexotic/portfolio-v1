@@ -116,6 +116,7 @@
 
 .burger-btn {
    display: none;
+   margin-left: 1rem;
 }
 
 @media screen and (max-width: 524px) {
@@ -129,7 +130,6 @@
 
    #header .burger-btn {
       display: flex;
-      margin-left: 1rem;
    }
 
    #header h1,
@@ -180,7 +180,8 @@
       margin-top: 2rem;
    }
 
-   #header.show-menu .header-btn {
+   #header.show-menu .header-btn,
+   #header.show-menu .burger-btn {
       margin: 0 1rem;
    }
 }
