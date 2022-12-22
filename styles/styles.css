@@ -1,4 +1,36 @@
+/* Fonts Imports */
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+
+@font-face {
+   font-family: "SF Mono Regular";
+   font-style: normal;
+   font-weight: normal;
+   src: local("SF Mono Regular"), url("../public/fonts/SFMonoRegular.woff") format("woff");
+}
+
+@font-face {
+   font-family: "SF Mono Medium";
+   font-style: normal;
+   font-weight: normal;
+   src: local("SF Mono Medium"), url("../public/fonts/SFMonoMedium.woff") format("woff");
+}
+
+@font-face {
+   font-family: "SF Mono Semibold";
+   font-style: normal;
+   font-weight: normal;
+   src: local("SF Mono Semibold"), url("../public/fonts/SFMonoSemibold.woff") format("woff");
+}
+
+@font-face {
+   font-family: "SF Mono Bold";
+   font-style: normal;
+   font-weight: normal;
+   src: local("SF Mono Bold"), url("../public/fonts/SFMonoBold.woff") format("woff");
+}
+
+/* CSS Variables */
 
 :root {
    --background: #fff;
