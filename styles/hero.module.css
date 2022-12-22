@@ -11,7 +11,7 @@
 }
 
 #hero-section .container {
-   min-height: 91vh;
+   min-height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: center;
