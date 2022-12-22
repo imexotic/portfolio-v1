@@ -19,7 +19,8 @@ const Projects = () => {
                      <Image src={testProject} alt="Featured project #1" />
                   </a>
                   <div className={styles["project-info"]}>
-                     <h2 className={styles["title"]}>Ticket System 🎫</h2>
+                     <h3 className={styles["pretitle"]}>Featured Project</h3>
+                     <h2 className={styles["title"]}>🎫 Ticket System</h2>
                      <p className={styles["description"]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, obcaecati. Tenetur fugit neque quo voluptatum cum nobis atque, facere omnis eveniet id voluptas quidem, quae libero non eaque officia doloribus.</p>
                      <div className={styles["project-links"]}>
                         <a href="#" className={styles["link"]}>
@@ -40,6 +41,7 @@ const Projects = () => {
                      <Image src={testProject} alt="Featured project #2" />
                   </a>
                   <div className={styles["project-info"]}>
+                     <h3 className={styles["pretitle"]}>Featured Project</h3>
                      <h2 className={styles["title"]}>Google Drive Clone 📂</h2>
                      <p className={styles["description"]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, obcaecati. Tenetur fugit neque quo voluptatum cum nobis atque, facere omnis eveniet id voluptas quidem, quae libero non eaque officia doloribus.</p>
                      <div className={styles["project-links"]}>
@@ -61,7 +63,8 @@ const Projects = () => {
                      <Image src={testProject} alt="Featured project #3" />
                   </a>
                   <div className={styles["project-info"]}>
-                     <h2 className={styles["title"]}>imexotic/ExoBot 🤖</h2>
+                     <h3 className={styles["pretitle"]}>Featured Project</h3>
+                     <h2 className={styles["title"]}>🤖 imexotic/ExoBot</h2>
                      <p className={styles["description"]}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, obcaecati. Tenetur fugit neque quo voluptatum cum nobis atque, facere omnis eveniet id voluptas quidem, quae libero non eaque officia doloribus.</p>
                      <div className={styles["project-links"]}>
                         <a href="#" className={styles["link"]}>
@@ -89,8 +92,8 @@ const Projects = () => {
 
             <div className={styles["projects"]}>
                <div className={styles["project-card"]}>
-                  <h3 className={styles["project-title"]}>TypingPractice</h3>
-                  <p className={styles["project-description"]}>⌨️ A simple Google Keep clone to make quick notes.</p>
+                  <h3 className={styles["project-title"]}>⌨️ TypingPractice</h3>
+                  <p className={styles["project-description"]}>A minimal typing practice site (aka Simpler MonkeyType 🦍)</p>
                   <div className={styles["project-links"]}>
                      <a href="#" className={styles["link"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>
@@ -113,8 +116,8 @@ const Projects = () => {
                </div>
 
                <div className={styles["project-card"]}>
-                  <h3 className={styles["project-title"]}>Simple Google Keep Clone</h3>
-                  <p className={styles["project-description"]}>📝 A simple Google Keep clone to make quick notes.</p>
+                  <h3 className={styles["project-title"]}>📝 Simple Google Keep Clone</h3>
+                  <p className={styles["project-description"]}>One of my first JS projects is a 'Google Keep Clone' to make text-only notes.</p>
                   <div className={styles["project-links"]}>
                      <a href="#" className={styles["link"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>
@@ -137,8 +140,8 @@ const Projects = () => {
                </div>
 
                <div className={styles["project-card"]}>
-                  <h3 className={styles["project-title"]}>Projectile Game</h3>
-                  <p className={styles["project-description"]}>✈️ Projectile Shooting Game w/ Canvas API</p>
+                  <h3 className={styles["project-title"]}>✈️ Projectile Game</h3>
+                  <p className={styles["project-description"]}>Projectile Shooting Game w/ Canvas API</p>
                   <div className={styles["project-links"]}>
                      <a href="#" className={styles["link"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>
@@ -162,7 +165,7 @@ const Projects = () => {
 
                <div className={styles["project-card"]}>
                   <h3 className={styles["project-title"]}>Clean Dashboard</h3>
-                  <p className={styles["project-description"]}>Lorem Lorem ipsum dolor sit amet consectetur.</p>
+                  <p className={styles["project-description"]}>Project management dashboard created by me as a beginner.</p>
                   <div className={styles["project-links"]}>
                      <a href="#" className={styles["link"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>

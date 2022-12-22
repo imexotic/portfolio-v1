@@ -18,9 +18,9 @@
    display: flex;
    align-items: center;
    position: relative;
-   height: 400px;
+   height: 35vw;
    width: 100%;
-   margin-top: 3rem;
+   margin-bottom: 2rem;
 }
 
 .project:nth-child(even) {
@@ -34,7 +34,7 @@
 .project-image_container {
    position: relative;
    width: 55%;
-   min-width: 350px;
+   min-width: 300px;
    cursor: pointer;
 }
 
@@ -69,8 +69,8 @@
    background-color: var(--card);
    border-radius: 0.5rem;
    padding: 2rem;
-   height: 200px;
    width: 50%;
+   min-width: 500px;
    box-shadow: 0 10px 10px -13px rgba(2, 12, 27, 0.7);
 }
 
@@ -78,13 +78,24 @@
    align-items: flex-start;
 }
 
+.project-info .pretitle {
+   position: absolute;
+   top: -85px;
+   right: 0;
+   font-family: "SF Mono Medium", "Inter";
+   font-size: 1rem;
+   color: var(--secondary-color);
+}
+
+.project:nth-child(even) .pretitle {
+   left: 0;
+}
+
 .project-info .title {
    position: absolute;
    right: 0 !important;
    top: -60px;
-   font-size: 2rem;
-   font-size: clamp(26px, 5vw, 32px);
-
+   font-size: clamp(23px, 2vw, 32px);
    font-weight: 600;
    width: max-content;
    margin-bottom: 1rem;
@@ -114,22 +125,29 @@
 }
 
 .project .project-links {
+   position: absolute;
+   left: 0;
+   bottom: -50px;
    display: flex;
    margin-top: auto;
 }
 
+.project:nth-child(odd) .project-links {
+   right: 0;
+   left: auto;
+}
+
 .project .link {
    font-size: 1.5rem;
-   margin-right: 1.5rem;
+   margin: 0 1rem;
    color: var(--primary-color) !important;
    text-decoration: none !important;
    display: flex;
    align-items: center;
-   /* transition: color 0.2s ease-in-out; */
 }
 
 .project .icon {
-   transition: color 0.2s linear;
+   transition: color 0.1s linear;
 }
 
 .project .link:hover,
@@ -172,7 +190,7 @@
 }
 
 .project-card .link {
-   margin: 0 0.5rem;
+   margin-right: 1rem;
 }
 
 .project-card .link {
@@ -209,7 +227,7 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
    .featured-projects {
       display: flex;
       flex-direction: column;
@@ -221,7 +239,7 @@
       min-width: 300px;
       height: 300px;
       border-radius: 0.5rem;
-      margin-top: 2rem;
+      margin: 2rem 0 0 0;
       justify-content: center;
       align-items: center;
       overflow: hidden;
@@ -249,6 +267,7 @@
 
    .project .project-info {
       width: 100%;
+      min-width: 0;
       height: 100%;
       flex-direction: column;
       justify-content: space-between;
@@ -269,6 +288,11 @@
       left: 0;
    }
 
+   .project-info .pretitle {
+      position: static;
+      margin-bottom: 0.5rem;
+   }
+
    .project-info .title {
       position: static;
       color: #fff !important;
@@ -279,6 +303,10 @@
       color: #fff !important;
       text-align: left !important;
       overflow-wrap: break-word;
+   }
+
+   .project .project-links {
+      position: static;
    }
 
    .project .link {

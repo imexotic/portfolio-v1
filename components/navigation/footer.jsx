@@ -26,10 +26,11 @@ const Footer = () => {
                <a className="url-link" href="https://nextjs.org/" target="__blank">
                   Next.js
                </a>
-               &nbsp;&nbsp;—&nbsp;&nbsp;Powered by&nbsp;
+               .&nbsp;Powered by&nbsp;
                <a className="url-link" href="https://vercel.com/dashboard" target="__blank">
                   Vercel
                </a>
+               .
             </p>
          </div>
       </footer>

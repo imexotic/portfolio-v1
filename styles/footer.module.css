@@ -22,11 +22,11 @@ footer .container {
 
 .developer,
 .footer-text {
-   margin: 0.5rem 0;
+   margin: 0.4rem 0;
 }
 
 .developer {
-   font-size: 1.1rem;
+   font-size: 1rem;
    font-weight: 400;
    color: var(--primary-color);
 }
