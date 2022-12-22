@@ -7,8 +7,8 @@ import { FiSun, FiMoon, FiMenu } from "react-icons/fi";
 import useScrollDirection from "../../hooks/useScrollDirection";
 
 const Header = ({ theme, toggleTheme }) => {
-   const [toggle, setToggle] = useState(false);
-   const [icon, setIcon] = useState();
+   const [toggle, setToggle] = useState(false); // burger menu toggler
+   const [icon, setIcon] = useState(); // header icon based on current theme
    const [scrollPosition, scrollDirection] = useScrollDirection();
 
    useEffect(() => {
@@ -19,6 +19,9 @@ const Header = ({ theme, toggleTheme }) => {
       setIcon(theme === "dark" ? <FiSun /> : <FiMoon />);
    }, [theme]);
 
+   // check if burger menu is open
+   const handleMenuClose = () => toggle && setToggle(false);
+
    return (
       <header id={styles["header"]} className={`${scrollDirection === "down" ? styles["hide"] : styles["show"]} ${scrollPosition === 0 ? styles["top"] : styles["scroll"]} ${toggle ? styles["show-menu"] : styles["hide-menu"]}`}>
          <div className={`${styles["container"]} container`}>
@@ -26,17 +29,17 @@ const Header = ({ theme, toggleTheme }) => {
             <nav className={styles["navbar"]}>
                <ul className={toggle === true ? styles["show-nav"] : styles["hide-nav"]}>
                   <li className={styles["nav-item"]}>
-                     <a href="#about-section" className={styles["nav-link"]}>
+                     <a href="#about-section" className={styles["nav-link"]} onClick={() => handleMenuClose()}>
                         About
                      </a>
                   </li>
                   <li className={styles["nav-item"]}>
-                     <a href="#project-section" className={styles["nav-link"]}>
+                     <a href="#project-section" className={styles["nav-link"]} onClick={() => handleMenuClose()}>
                         Projects
                      </a>
                   </li>
                   <li className={styles["nav-item"]}>
-                     <a href="#contact-section" className={styles["nav-link"]}>
+                     <a href="#contact-section" className={styles["nav-link"]} onClick={() => handleMenuClose()}>
                         Contact
                      </a>
                   </li>
