@@ -49,8 +49,9 @@
    --primary-color: #fff;
    --secondary-color: #805ad5;
    --third-color: #1ea1f1;
-   --hover: rgba(255, 255, 255, 0.08);
    --card: #2d3748;
+   /* --hover: #2d3748; */
+   --hover: rgba(255, 255, 255, 0.08);
    --border: rgba(249, 251, 252, 0.171);
 }
 

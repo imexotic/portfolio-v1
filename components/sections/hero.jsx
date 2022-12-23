@@ -8,7 +8,6 @@ import SocialLinks from "../misc/socialLinks";
 const Hero = () => {
    return (
       <section id={styles["hero-section"]}>
-         <div className={styles["line"]}></div>
          <div className={`${styles["container"]} container`}>
             <h3 className={styles["hero-pretitle"]}>
                <span className={styles["wave"]}>👋</span> Hi there, my name is
@@ -23,6 +22,7 @@ const Hero = () => {
             </h2>
             <div className={styles["hero-image"]}>
                <Image src={heroImg} alt="me :)" className={styles["img"]} />
+               <div className={styles["line"]}></div>
             </div>
 
             <SocialLinks _styles={styles} />
