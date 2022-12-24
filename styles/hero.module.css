@@ -3,7 +3,7 @@
 #hero-section {
    position: relative;
    background-color: var(--background);
-   padding-top: 2rem;
+   padding-top: 4vh;
    z-index: 100;
    display: flex;
    justify-content: center;
