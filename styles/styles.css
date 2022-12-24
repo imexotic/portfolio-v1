@@ -176,6 +176,8 @@ ul {
       z-index: 500;
 
       animation: blur-in 0.5s forwards;
+      -webkit-animation: blur-in 0.5s forwards;
+      -moz-animation: blur-in 0.5s forwards;
    }
 
    .no-scroll section,

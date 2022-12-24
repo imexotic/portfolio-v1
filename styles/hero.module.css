@@ -3,7 +3,7 @@
 #hero-section {
    position: relative;
    background-color: var(--background);
-   padding-top: 4vh;
+   /* padding-top: 1vh; */
    z-index: 100;
    display: flex;
    justify-content: center;
@@ -22,11 +22,11 @@
 .line {
    position: absolute;
    width: 110vw;
-   transform: rotate(-3deg);
+   transform: rotate(-2deg);
    height: 200px;
-   background-color: var(--primary-color);
-   opacity: 0.1;
-   z-index: 1;
+   background-color: var(--card);
+   opacity: 1;
+   z-index: -1;
 }
 
 .hero-image {
