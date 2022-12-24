@@ -2,7 +2,7 @@ import styles from "../../styles/header.module.css";
 
 import { useState, useEffect } from "react";
 import { IconContext } from "react-icons";
-import { FiSun, FiMoon, FiMenu } from "react-icons/fi";
+import { FiSun, FiMoon } from "react-icons/fi";
 
 const Header = ({ scrollPosition, scrollDirection, theme, toggleTheme }) => {
    const [toggle, setToggle] = useState(false); // burger menu toggler
@@ -37,7 +37,7 @@ const Header = ({ scrollPosition, scrollDirection, theme, toggleTheme }) => {
                   </li>
                   <li className={styles["nav-item"]}>
                      <input type="checkbox" className={styles["checkbox"]} id="checkbox" defaultChecked={theme === "light" ? true : false} onChange={() => toggleTheme()} />
-                     <label for="checkbox" className={styles["checkbox-label"]}>
+                     <label htmlFor="checkbox" className={styles["checkbox-label"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>
                            <FiSun />
                         </IconContext.Provider>
@@ -50,11 +50,9 @@ const Header = ({ scrollPosition, scrollDirection, theme, toggleTheme }) => {
                </ul>
             </nav>
             <button className={(styles["header-btn"], styles["burger-btn"])} onClick={(e) => setToggle(!toggle)}>
-               <IconContext.Provider value={{ className: styles["icon"] }}>
-                  <>
-                     <FiMenu />
-                  </>
-               </IconContext.Provider>
+               <div className={`${styles["line-menu"]} ${styles["half"]} ${styles["start"]}`}></div>
+               <div className={styles["line-menu"]}></div>
+               <div className={`${styles["line-menu"]} ${styles["half"]} ${styles["end"]}`}></div>
             </button>
          </div>
       </header>
