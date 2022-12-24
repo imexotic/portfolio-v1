@@ -39,8 +39,8 @@
    justify-content: space-between;
    align-items: center;
    padding: 0;
-   transition: padding 0.2s ease-in-out;
-   -webkit-transition: padding 0.2s ease-in-out;
+   transition: padding 0.3s ease-in-out;
+   -webkit-transition: padding 0.3s ease-in-out;
 }
 
 #header h1 {
@@ -160,7 +160,6 @@
 @media screen and (max-width: 524px) {
    #header.show-menu {
       transform: translateY(0px) !important;
-      background-color: unset;
       box-shadow: none !important;
       transition: unset;
       -webkit-transition: unset;
@@ -168,11 +167,16 @@
 
    #header .container {
       position: relative;
+      padding: 1.6rem 0;
    }
 
-   #header.show-menu h1 {
+   #header h1 {
       position: relative;
       z-index: 1111;
+   }
+
+   #header.scrolling .container {
+      padding: 1.6rem 0;
    }
 
    #header .burger-btn {
@@ -187,21 +191,21 @@
       z-index: 1000;
       flex-direction: column;
       justify-content: center !important;
-      background-color: var(--card);
+      background-color: var(--background);
       height: 100vh;
-      width: 75%;
-      transform: translateX(360px);
+      width: 100%;
+      transform: translateX(100%);
       margin: 0 !important;
       box-shadow: 0 10px 10px -13px rgba(2, 12, 27, 0.7);
       transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
    }
 
    #header.show-menu .navbar ul {
-      transform: translateX(25px);
+      transform: translateX(0px);
    }
 
    #header .navbar ul li {
-      margin: 1rem;
+      margin: 1.5rem 0;
    }
 
    #header .navbar a {
