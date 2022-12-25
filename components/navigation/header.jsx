@@ -36,7 +36,7 @@ const Header = ({ scrollPosition, scrollDirection, theme, toggleTheme }) => {
                      </a>
                   </li>
                   <li className={styles["nav-item"]}>
-                     <input type="checkbox" className={styles["checkbox"]} id="checkbox" defaultChecked={theme === "light" ? true : false} onChange={() => toggleTheme()} />
+                     <input type="checkbox" className={styles["checkbox"]} id="checkbox" defaultChecked={theme === "dark" ? true : false} onChange={() => toggleTheme()} />
                      <label htmlFor="checkbox" className={styles["checkbox-label"]}>
                         <IconContext.Provider value={{ className: styles["icon"] }}>
                            <FiSun />

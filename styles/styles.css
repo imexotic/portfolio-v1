@@ -38,9 +38,13 @@
    --secondary-color: #805ad5;
    --third-color: #1ea1f1;
    --hover: #edf2f7;
-   /* --card: #edf2f7; */
-   --card: #f0f1f1;
-   --border: #99a0a562;
+
+   /* --card: #f0f1f1;
+   --border: #99a0a562; */
+
+   --card: #f7f7f8;
+   --border: #d8d8da;
+
    --project-overlay: rgba(45, 55, 72, 0.8);
 }
 
@@ -50,7 +54,6 @@
    --secondary-color: #805ad5;
    --third-color: #1ea1f1;
    --card: #2d3748;
-   /* --hover: #2d3748; */
    --hover: rgba(255, 255, 255, 0.08);
    --border: rgba(249, 251, 252, 0.171);
 }
@@ -84,6 +87,13 @@ input[type="submit"] {
    border: 0;
    cursor: pointer;
    font-family: inherit;
+}
+
+input,
+textarea,
+button,
+a {
+   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 h1,
