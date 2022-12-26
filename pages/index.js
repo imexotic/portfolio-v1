@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Header, Footer, Hero, About, Projects, Contact, SocialSidebar } from "../components/index.js";
+import { Header, Footer, Hero, About, Projects, Contact } from "../components/index.js";
 import useLocalStorage from "../hooks/useLocalStorage";
 import useScrollDirection from "../hooks/useScrollDirection";
 
@@ -34,7 +34,6 @@ const App = () => {
          {ref.current && (
             <>
                <Header theme={theme} toggleTheme={toggleTheme} scrollPosition={scrollPosition} scrollDirection={scrollDirection} />
-               <SocialSidebar />
                <Hero />
                <About scrollDirection={scrollDirection} />
                <Projects />

@@ -16,7 +16,7 @@ const Hero = () => {
             <h2 className={styles["hero-subtitle"]}>
                <span>
                   {"{ "}
-                  <Typewriter words={["student", "developer"]} loop={true} cursor={true} />
+                  <Typewriter words={["student", "developer"]} delaySpeed={2000} loop={true} cursor={true} />
                   {" }"}
                </span>
             </h2>
