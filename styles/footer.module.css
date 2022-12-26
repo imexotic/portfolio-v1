@@ -10,8 +10,8 @@ footer .container {
 }
 
 .social-links {
+   display: flex;
    flex-direction: row;
-   display: none;
    margin-bottom: 1.3rem;
 }
 
@@ -40,10 +40,4 @@ footer .container {
 .footer-icon {
    vertical-align: bottom;
    font-size: 1.2rem;
-}
-
-@media screen and (max-width: 767px) {
-   .social-links {
-      display: flex;
-   }
 }
